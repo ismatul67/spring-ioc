@@ -1,6 +1,7 @@
 package id.mandiri.day1.induction.be;
 
 import id.mandiri.day1.induction.be.config.ApplicationConfig;
+import id.mandiri.day1.induction.be.model.Apel;
 import id.mandiri.day1.induction.be.model.Fruit;
 import id.mandiri.day1.induction.be.model.Jeruk;
 import id.mandiri.day1.induction.be.model.Mangga;
@@ -33,9 +34,10 @@ public class Application {
 
         System.out.println(storeAgus.addNewFruit(new Jeruk()));
         System.out.println(storeAgus.addNewFruit(new Mangga()));
+        System.out.println(storeAgus.addNewFruit(new Apel()));
         System.out.println(storeAgus.findAllFruits());
 
-        storeAgus.sellAFruit("mangga", 2);
+        storeAgus.sellAFruit("apel", 2);
 
 
         //Store Budi sell a fruit cheaper than store Agus
@@ -47,7 +49,7 @@ public class Application {
         System.out.println(storeBudi.addNewFruit(new Mangga()));
         System.out.println(storeBudi.findAllFruits());
 
-        storeBudi.sellAFruit("mangga", 2);
+        storeBudi.sellAFruit("apel", 2);
 
 
     }

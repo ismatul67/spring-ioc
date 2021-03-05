@@ -41,8 +41,8 @@ public class StoreBudi  implements StoreService {
                 }
             }
 
-            double total = fruitToBuy.getPrice() *quantity;
             if (fruitToBuy!=null){
+                double total = fruitToBuy.getPrice() *quantity;
                 System.out.println("you buy this fruit cheaper, you should pay " + (total- (total*0.2)));
             }else {
                 System.out.println(fruitName + " is empty");

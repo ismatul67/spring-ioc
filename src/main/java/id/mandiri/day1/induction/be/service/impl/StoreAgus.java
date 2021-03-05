@@ -2,7 +2,7 @@ package id.mandiri.day1.induction.be.service.impl;
 
 import id.mandiri.day1.induction.be.model.Fruit;
 import id.mandiri.day1.induction.be.service.StoreService;
-import org.springframework.beans.factory.annotation.Autowired;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,8 +43,8 @@ public class StoreAgus implements StoreService {
                 }
             }
 
-            double total = fruitToBuy.getPrice() *quantity;
             if (fruitToBuy!=null){
+                double total = fruitToBuy.getPrice() *quantity;
                 System.out.println("you buy this fruit, you should pay " + total);
             }else {
                 System.out.println(fruitName + " is empty");
